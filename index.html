@@ -1,70 +1,220 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <div class="intro-section">
-      <div class="image-block container">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <a class="navbar-brand" href="#">
+    <img src="/images/top2.png" alt="">
+  </a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="animated-icon1">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+
+  <nav class="navbar navbar-light amber lighten-4" id="navbar">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto" id="nav-list">
+      <li class="nav-item active">
+        <a class="nav-link" href="#solutions" onclick="navbarClicked(counterInit); toggleHamburger();">Digital Solutions
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#whoami" onclick="navbarClicked(counterInit); toggleHamburger();">Whoami</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects" onclick="navbarClicked(counterInit); toggleHamburger();">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills" onclick="navbarClicked(counterInit); toggleHamburger();">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact" onclick="navbarClicked(counterInit); toggleHamburger();">Contact Me</a>
+      </li>
+    </ul>
+    <!-- Links -->
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+
+  <div class="container-fluid">
+    <div class="row intro-section">
+      <div class="image-block col-md-12">
         <img src="images/triangle.png" alt="">
-        <h1 class="image-header">These are some test words</h1>
+        <h1 class="image-header">The future starts here
+          <p class="image-subtitle">
+            <img src="/images/graphic-tool.png"> some extra text</p>
+        </h1>
       </div>
     </div>
-
-    <div class="content-section">
-      <div class="container">
-        <h1 class="content-title">Hello, world!</h1>
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <h1>Padding: 75px 50px;</h1>
-            <div class="content-divider"></div>
-            <p class="text text-left">This is some random text</p>
-          </div>
-          <div class="col-md-6 col-sm-12"></div>
+  </div>
+  <div class="content-section">
+    <div class="container">
+      <h1>Hello, world test!</h1>
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <h4>Padding: 75px 50px;</h4>
+          <div class="content-divider"></div>
+          <p class="text text-left">This is some random text</p>
+        </div>
+        <div class="col-lg-6 col-md-12"></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-section">
+    <div class="container">
+      <h1 class="content-title">Hello, world!</h1>
+      <div class="row">
+        <div class="content-box-left col-lg-6 col-md-12">
+          <h1>Padding: 75px 50px;</h1>
+          <div class="content-divider"></div>
+          <p class="text text-left">This is some random text</p>
+        </div>
+        <div class="content-box-right col-lg-6 col-md-12">
+          <h1>Padding: 75px 50px;</h1>
+          <div class="content-divider"></div>
+          <p class="text text-left">This is some random text</p>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <div class="content-section">
-      <div class="container">
-        <h1 class="content-title">Hello, world!</h1>
-        <div class="row">
-          <div class="content-box-left col-lg-6 col-md-12">
-            <h1>Padding: 75px 50px;</h1>
-            <div class="contentDivider"></div>
-            <p class="text text-left">This is some random text</p>
-          </div>
-          <div class="content-box-right col-md-6 col-sm-12"></div>
-        </div>
-      </div>
-    </div>
-
-    
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  
-    <script>
-       $(window).scroll(function() {
-          $(".intro-section").css({
-          'opacity' : 1-(($(this).scrollTop())/600)
-          });          
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(window).scroll(function () {
+      $(".intro-section").css({
+        'opacity': 1 - (($(this).scrollTop()) / 600)
       });
-    </script>
-  
-  </body>
+    });
+  </script>
+
+  <script>
+    function toggleHamburger() {
+      $('.animated-icon1').toggleClass('open');
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.animated-icon1,.animated-icon3,.animated-icon4').click(function () {
+        $(this).toggleClass('open');
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    // https://css-tricks.com/snippets/javascript/loop-queryselectorall-matches/
+    var forEach = function (array, callback, scope) {
+      for (var i = 0; i < array.length; i++) {
+        callback.call(scope, i, array[i]); // passes back stuff we need
+      }
+    };
+
+    var containers = document.querySelectorAll(".container-phone");
+
+    forEach(containers, function (index, value) {
+      value.addEventListener("click", function () {
+        this.classList.toggle("alert-is-shown");
+      });
+    });
+  </script>
+  <script>
+    // https://css-tricks.com/snippets/javascript/loop-queryselectorall-matches/
+    var forEach2 = function (array2, callback2, scope2) {
+      for (var j = 0; j < array2.length; j++) {
+        callback2.call(scope2, j, array2[j]); // passes back stuff we need
+      }
+    };
+
+    var containers2 = document.querySelectorAll(".container-tablet");
+
+    forEach2(containers2, function (index, value) {
+      value.addEventListener("click", function () {
+        this.classList.toggle("alert-is-shown");
+      });
+    });
+  </script>
+  <script>
+    var counterInit = 1;
+    toggleHeight(counterInit);
+    document.getElementById("navbar-toggler").addEventListener("click", toggleHeight);
+
+    function toggleHeight(counter) {
+      console.log(counterInit);
+      if (counterInit % 2 == 0) {
+        document.getElementById("navbar").style.transition = "1s";
+        document.getElementById("nav-list").style.transitionDelay = ".3s";
+        document.getElementById("nav-list").style.transitionDuration = ".2s";
+        document.getElementById("navbar").style.height = "100vh";
+        document.getElementById("nav-list").style.opacity = "1";
+        document.getElementById("nav-list").style.visibility = "visible";
+
+      } else {
+        document.getElementById("navbar").style.transitionDuration = "1s";
+        document.getElementById("nav-list").style.transitionDelay = ".2s";
+        document.getElementById("nav-list").style.transitionDuration = ".2s";
+        document.getElementById("navbar").style.height = "0vh";
+        document.getElementById("nav-list").style.opacity = "0";
+        document.getElementById("nav-list").style.visibility = "hidden";
+      }
+      counterInit++;
+      console.log(counterInit);
+    }
+
+    function navbarClicked(counterInit) {
+      document.getElementById("navbar").style.transitionDelay = ".75s";
+      document.getElementById("navbar").style.transitionDudration = ".6s";
+      document.getElementById("nav-list").style.transitionDelay = "1s";
+      document.getElementById("nav-list").style.transitionDuration = ".4s";
+      console.log(counterInit);
+      counterInit++;
+      console.log(counterInit);
+      toggleHeight(counterInit);
+    }
+  </script>
+  <script>
+    $("#button").click(function () {
+      $('html, body').animate({
+        scrollTop: $("#solutions").offset().top
+      }, 1000);
+    });
+  </script>
+
+</body>
+
 </html>

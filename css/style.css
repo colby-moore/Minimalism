@@ -4,11 +4,12 @@ body{
 
 body, h1, h2, h3, h4, h5, h6, p{
   font-family: 'Montserrat', sans-serif;
-  color: black;
+
 }
 
 h1{
-  font-size: 5.3rem;
+  font-size: 38px;
+  
 }
 
 .text{
@@ -17,6 +18,124 @@ h1{
   position: relative;
   padding-top: 1em;
 }
+
+/* Navbar css*/
+.navbar {
+  display: -webkit-box !important;
+  padding: 0px !important;
+  transition: 1s;
+  height: 0vh;
+  position: fixed !important;
+  z-index: 1000;
+  width: 100%;
+  background: #312c32 !important; }
+
+.navbar ul {
+  text-align: center;
+  margin-left: auto !important;
+  margin-right: 50px !important;
+  opacity: 0;
+  transition-delay: .2s;
+  transition-duration: .2s; }
+
+.navbar ul li {
+  font-size: 3vw;
+  line-height: initial;
+  text-align: right; }
+  @media only screen and (max-width: 768px) {
+    .navbar ul li {
+      font-size: 4vw; } }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand {
+  margin-top: -30px;
+  font-size: 53px !important;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  z-index: 1001;
+  position: fixed;
+  top: 7px;
+  left: 10px;
+}
+
+  .navbar-brand img{
+    height: 50px;
+  }
+
+.navbar-toggler {
+  z-index: 1001;
+  position: fixed;
+  top: 18px;
+  right: 10px; }
+
+.animated-icon1 {
+  width: 25px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer; }
+
+.animated-icon1 span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out; }
+
+.animated-icon1 span {
+  background: #404040; }
+
+.animated-icon1 span:nth-child(1) {
+  top: 0px; }
+
+.animated-icon1 span:nth-child(2) {
+  top: 10px; }
+
+.animated-icon1 span:nth-child(3) {
+  top: 20px; }
+
+.animated-icon1.open span:nth-child(1) {
+  background-color: white;
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.animated-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px; }
+
+.animated-icon1.open span:nth-child(3) {
+  background-color: white;
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg); }
+  /* End navbar css*/
 
 .intro-section{
     z-index: 2;
@@ -38,18 +157,43 @@ h1{
   width: 100%;
 }
   .image-block img{
+    margin-top: -20px;
     align-items: center;
-    max-width: 800px;
+    width: 90vw;
   }
 
   .image-header{
+    font-family: Montserrat,sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.5em;
+    text-transform: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
   }
+    .image-subtitle{
+      margin-top: 20px;
+      font-family: Montserrat,sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1.5em;
+      text-transform: none;
+    }
 
+      .image-subtitle img{
+        margin-top: 0 !important;
+        height: 20px;
+        width: 20px;
+      }
 
 .content-section{
   justify-content: center;
@@ -60,14 +204,13 @@ h1{
 }
 
 .content-title{
-  margin-top: 100px;
-  font-size: 160px;
+  font-size: 45px;
     font-weight: bold;
-    line-height: .6;
+    line-height: .3;
     position: relative;
     z-index: 2;
     text-align: left;
-    color: black;
+    color: #404040;
 }
 
 .content-box-left{
@@ -100,10 +243,17 @@ h1{
 }
 
 
+@media only screen and (min-width: 1024px) {
+  .content-title{
+    font-size: 12.5vw
+  }
+}
+
+
   @keyframes colorchange
   {
     0%   {background: #EAEAEA;}
-    33%   {background: #85D9E7;}
+    33%   {background: #EFE9D0;}
     66%  {background: #FFBBBA;}
     100%  {background: #EAEAEA;}
 
@@ -112,7 +262,7 @@ h1{
   @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
   {
     0%   {background: #EAEAEA;}
-    33%   {background: #85D9E7;}
+    33%   {background: #EFE9D0;}
     66%  {background: #FFBBBA;}
     100%  {background: #EAEAEA;}
   }
