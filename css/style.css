@@ -1,0 +1,118 @@
+body{
+  background-color: #EAEAEA;
+}
+
+body, h1, h2, h3, h4, h5, h6, p{
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+h1{
+  font-size: 5.3rem;
+}
+
+.text{
+  font-size: 16px;
+  line-height: 1.9em;
+  position: relative;
+  padding-top: 1em;
+}
+
+.intro-section{
+    z-index: 2;
+    animation-delay: 2s;
+    animation: colorchange 15s infinite 1.25s; /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 15s infinite 1.25s; /* Chrome and Safari */
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.image-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+  .image-block img{
+    align-items: center;
+    max-width: 800px;
+  }
+
+  .image-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+
+.content-section{
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: #EAEAEA;
+}
+
+.content-title{
+  margin-top: 100px;
+  font-size: 160px;
+    font-weight: bold;
+    line-height: .6;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    color: black;
+}
+
+.content-box-left{
+  color: #fff;
+  background-color: #2B2F3C;
+  height: 100%;
+  padding: 75px 50px;
+}
+
+  .content-divider{
+    display: block;
+    position: relative;
+    height: 3px;
+    background-color: currentColor;
+    width: 60px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+
+  .text{
+    font-size: 16px;
+    line-height: 1.9em;
+    position: relative;
+    padding-top: 1em;
+  }
+
+.content-box-right{
+  background-color: #9BA5B5;
+  padding: 75px 50px;
+}
+
+
+  @keyframes colorchange
+  {
+    0%   {background: #EAEAEA;}
+    33%   {background: #85D9E7;}
+    66%  {background: #FFBBBA;}
+    100%  {background: #EAEAEA;}
+
+  }
+
+  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+  {
+    0%   {background: #EAEAEA;}
+    33%   {background: #85D9E7;}
+    66%  {background: #FFBBBA;}
+    100%  {background: #EAEAEA;}
+  }
