@@ -194,7 +194,164 @@ h1{
         height: 20px;
         width: 20px;
       }
+/* End intro section */
 
+/*Interactive Phone*/
+.solution-text-container{
+  margin-top: 150px;
+}
+
+#phone-container {
+  margin-top: 40px;
+  display: flex; }
+
+.container-phone .alert-phone {
+  transform: translateY(130%);
+  transition-timing-function: ease-in;
+  transition: 0.2s; }
+
+.container-phone.alert-is-shown .alert-phone {
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+  transform: translateY(-50%);
+  opacity: 1; }
+
+.container-phone {
+  align-self: flex-end;
+  margin: 30px auto;
+  padding: 0px;
+  background: url("http://www.designbolts.com/wp-content/uploads/2016/10/Polygon-Apple-iPhone-7-Plus-Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 150px;
+  border: 10px solid #666666;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px / 20px 20px 20px 20px; }
+  .container-phone::before {
+    content: "";
+    background: #666666;
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px; }
+  .container-phone::after {
+    content: "";
+    background: #848484;
+    position: absolute;
+    z-index: 20;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    height: 25px; }
+
+.alert-phone {
+  text-align: center;
+  width: 90%;
+  height: 60px;
+  left: 5%;
+  bottom: 70px;
+  background: #e9f4f8;
+  border-radius: 4px;
+  opacity: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 10; }
+
+.note-phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 12px monospace;
+  color: #999;
+  text-transform: uppercase; }
+
+.container-tablet.alert-tablet {
+  transform: translateY(150%);
+  transition-timing-function: ease-in;
+  transition: 0.2s; }
+
+.container-tablet.alert-is-shown .alert-tablet {
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+  transform: translateY(-300%);
+  opacity: 1; }
+
+.container-tablet {
+  align-self: flex-end;
+  margin: 30px auto;
+  background: url("http://www.designbolts.com/wp-content/uploads/2016/10/Polygon-Apple-iPhone-7-Plus-Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 270px;
+  border: 10px solid #666666;
+  height: 390px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px / 20px 20px 20px 20px; }
+  .container-tablet::before {
+    content: "";
+    background: #666666;
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px; }
+  .container-tablet::after {
+    content: "";
+    background: #848484;
+    position: absolute;
+    z-index: 20;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    height: 25px; }
+
+.alert-tablet {
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+  width: 90%;
+  height: 60px;
+  left: 5%;
+  bottom: -8px;
+  background: #e9f4f8;
+  border-radius: 4px;
+  opacity: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 10;
+  text-align: center; }
+
+.note-tablet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 12px monospace;
+  color: #999;
+  text-transform: uppercase; }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #phone-container {
+    display: block; }
+
+  .container-phone {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .container-tablet {
+    margin-bottom: 20px; }
+
+  .container-laptop {
+    margin-bottom: 20px; } }
+/* end interactive phone*/
+      
 .content-section{
   justify-content: center;
   display: flex;
