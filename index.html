@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Hello, world!</title>
@@ -67,9 +67,11 @@
     <div class="row intro-section">
       <div class="image-block col-md-12">
         <img src="images/traingle3.png" alt="">
-        <h1 class="image-header">The future starts here
+        <h1 class="image-header">The future starts <br>here
           <p class="image-subtitle">
-            <img src="/images/graphic-tool.png"> some extra text</p>
+            <!-- <img src="/images/graphic-tool.png">  -->
+            some extra text
+          </p>
         </h1>
       </div>
     </div>
@@ -78,7 +80,7 @@
     <div class="row">
       <a name="solutions" id="solutions"></a>
       <div class="container solution-text-container">
-        <h1>Digital Solutions:</h1>
+        <h1 class="text-center">Digital Solutions:</h1>
         <p class="text">
           <b>Got Ideas?</b> Your next idea is just waiting to be created and I can help bring that next idea to life.</p>
       </div>
@@ -121,9 +123,9 @@
       <h1 class="content-title">Connect</h1>
       <div class="row">
         <div class="content-box-left col-lg-6 col-md-12">
-          <h1>Padding: 75px 50px;</h1>
+          <h1 class="text-white">Padding: 75px 50px;</h1>
           <div class="content-divider"></div>
-          <p class="text text-left">This is some random text</p>
+          <p class="text text-left text-white">This is some random text</p>
         </div>
         <div class="content-box-right col-lg-6 col-md-12">
           <h1>Padding: 75px 50px;</h1>
@@ -149,7 +151,7 @@
   <script>
     $(window).scroll(function () {
       $(".intro-section").css({
-        'opacity': 1 - (($(this).scrollTop()) / 600)
+        'opacity': 1 - (($(this).scrollTop()) / 530)
       });
     });
   </script>

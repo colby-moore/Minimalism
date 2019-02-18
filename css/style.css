@@ -4,7 +4,8 @@ body{
 }
 
 body, h1, h2, h3, h4, h5, h6, p{
-  font-family: 'Montserrat', sans-serif;
+  color: #161618;
+  font-family: 'Work Sans', sans-serif;
 
 }
 
@@ -29,7 +30,7 @@ h1{
   position: fixed !important;
   z-index: 1000;
   width: 100%;
-  background: #312c32 !important; }
+  background: #161618 !important; }
 
 .navbar ul {
   text-align: center;
@@ -49,7 +50,7 @@ h1{
 
 .navbar-light .navbar-nav .nav-link {
   color: #ffffff !important;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .navbar-brand {
@@ -64,7 +65,9 @@ h1{
 }
 
   .navbar-brand img{
+    background: #161618;
     height: 50px;
+    border-radius: 50%;
   }
 
 .navbar-toggler {
@@ -106,7 +109,7 @@ h1{
   transition: 0.25s ease-in-out; }
 
 .animated-icon1 span {
-  background: #404040; }
+  background: #161618; }
 
 .animated-icon1 span:nth-child(1) {
   top: 0px; }
@@ -141,9 +144,9 @@ h1{
 .intro-section{
     z-index: 2;
     animation-delay: 2s;
-    animation: colorchange 15s infinite 1.25s; /* animation-name followed by duration in seconds*/
+    animation: colorchange 11s infinite 1.25s; /* animation-name followed by duration in seconds*/
   /* you could also use milliseconds (ms) or something like 2.5s */
-  -webkit-animation: colorchange 15s infinite 1.25s; /* Chrome and Safari */
+  -webkit-animation: colorchange 11s infinite 1.25s; /* Chrome and Safari */
     justify-content: center;
     display: flex;
     height: 100vh;
@@ -164,28 +167,28 @@ h1{
   }
 
   .image-header{
-    font-family: Montserrat,sans-serif;
-    font-size: 34px;
+    font-family: Work Sans,sans-serif;
+    font-size: 19px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
-    letter-spacing: normal;
+    letter-spacing: 5px;
     line-height: 1.5em;
-    text-transform: none;
+    text-transform: uppercase;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 95%;
   }
     .image-subtitle{
       margin-top: 20px;
-      font-family: Montserrat,sans-serif;
-      font-size: 13px;
+      font-family: Work Sans,sans-serif;
+      font-size: 14px;
       font-style: normal;
       font-variant: normal;
       font-weight: normal;
-      letter-spacing: normal;
+      letter-spacing: 2px;
       line-height: 1.5em;
       text-transform: none;
     }
@@ -221,33 +224,34 @@ h1{
   align-self: flex-end;
   margin: 30px auto;
   padding: 0px;
-  background: url("http://www.designbolts.com/wp-content/uploads/2016/10/Polygon-Apple-iPhone-7-Plus-Background.jpg");
+  background: url("https://images.pexels.com/photos/1886516/pexels-photo-1886516.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 150px;
-  border: 10px solid #666666;
+  border: 10px solid #000;
   height: 280px;
   position: relative;
   overflow: hidden;
   border-radius: 20px 20px / 20px 20px 20px 20px; }
   .container-phone::before {
     content: "";
-    background: #666666;
+    background: #000;
     position: absolute;
-    z-index: 20;
+    z-index: 21;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 30px; }
+    height: 38px; }
   .container-phone::after {
     content: "";
-    background: #848484;
+    background: #282727;
     position: absolute;
     z-index: 20;
     bottom: 30px;
     left: 0;
     width: 100%;
-    height: 25px; }
+    height: 20px; }
 
 .alert-phone {
   text-align: center;
@@ -264,12 +268,20 @@ h1{
 
 .note-phone {
   position: absolute;
-  top: 50%;
+  bottom: -5%;
   left: 50%;
   transform: translate(-50%, -50%);
   font: 12px monospace;
   color: #999;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  z-index: 21; }
 
 .container-tablet.alert-tablet {
   transform: translateY(150%);
@@ -285,33 +297,33 @@ h1{
 .container-tablet {
   align-self: flex-end;
   margin: 30px auto;
-  background: url("http://www.designbolts.com/wp-content/uploads/2016/10/Polygon-Apple-iPhone-7-Plus-Background.jpg");
+  background: url("https://images.pexels.com/photos/1070345/pexels-photo-1070345.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
   background-repeat: no-repeat;
   width: 270px;
-  border: 10px solid #666666;
+  border: 10px solid #000;
   height: 390px;
   position: relative;
   overflow: hidden;
   border-radius: 20px 20px / 20px 20px 20px 20px; }
   .container-tablet::before {
     content: "";
-    background: #666666;
+    background: #000;
     position: absolute;
     z-index: 20;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 30px; }
+    height: 45px; }
   .container-tablet::after {
     content: "";
-    background: #848484;
+    background: #282727;
     position: absolute;
-    z-index: 20;
+    z-index: 19;
     bottom: 30px;
     left: 0;
     width: 100%;
-    height: 25px; }
+    height: 28px; }
 
 .alert-tablet {
   transition: 0.25s;
@@ -330,12 +342,20 @@ h1{
 
 .note-tablet {
   position: absolute;
-  top: 50%;
+  bottom: -4%;
   left: 50%;
   transform: translate(-50%, -50%);
   font: 12px monospace;
   color: #999;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 21;
+  height: 36px;
+  width: 37px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -368,7 +388,7 @@ h1{
     position: relative;
     z-index: 2;
     text-align: left;
-    color: #404040;
+    color: #161618;
 }
 
 .content-box-left{
@@ -413,8 +433,8 @@ h1{
   @keyframes colorchange
   {
     0%   {background: #EAEAEA;}
-    33%   {background: #96beff;}
-    66%  {background: #FFBBBA;}
+    33%   {background: #CBEDE9;}
+    66%  {background: #FBC4C4;}
     100%  {background: #EAEAEA;}
 
   }
@@ -422,7 +442,7 @@ h1{
   @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
   {
     0%   {background: #EAEAEA;}
-    33%   {background: #96beff;}
+    33%   {background: #CBEDE9;}
     66%  {background: #FFBBBA;}
     100%  {background: #EAEAEA;}
   }
