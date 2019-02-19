@@ -17,20 +17,24 @@
 
 <body>
 
-  <!--Navbar-->
+  <div class="container-fluid" id="nav-sticky">
+      <!--Navbar-->
   <a class="navbar-brand" href="#">
-    <img src="/images/top2.png" alt="">
-  </a>
+      <img src="/images/top2.png" alt="">
+    </a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+      aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </div>
 
-  <!-- Collapse button -->
-  <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
-    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
-    <div class="animated-icon1">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </button>
+
 
   <nav class="navbar navbar-light amber lighten-4" id="navbar">
     <!-- Links -->
@@ -81,7 +85,7 @@
       <a name="solutions" id="solutions"></a>
       <div class="container solution-text-container">
         <h1 class="text-center">Digital Solutions:</h1>
-        <p class="text">
+        <p class="text text-center">
           <b>Got Ideas?</b> Your next idea is just waiting to be created and I can help bring that next idea to life.</p>
       </div>
       <div class="container-fluid" id="phone-container">
@@ -152,6 +156,13 @@
     $(window).scroll(function () {
       $(".intro-section").css({
         'opacity': 1 - (($(this).scrollTop()) / 530)
+      });
+    });
+    $(window).scroll(function () {
+      var alpha = 0 + (($(this).scrollTop()) / 750);
+      $("#nav-sticky").css({
+        //'opacity': 1 - (($(this).scrollTop()) / 530),
+        'background-color': 'rgba' + '(234, 234, 234,' + alpha +')'
       });
     });
   </script>

@@ -28,9 +28,17 @@ h1{
   transition: 1s;
   height: 0vh;
   position: fixed !important;
-  z-index: 1000;
+  z-index: 22;
   width: 100%;
-  background: #161618 !important; }
+  background: #EAEAEA !important; }
+
+  #nav-sticky{
+    z-index: 23;
+    height: 48px;
+    width: 100%;
+    background-color: rgba(22, 22, 24, 0);
+    position: fixed;
+  }
 
 .navbar ul {
   text-align: center;
@@ -49,32 +57,29 @@ h1{
       font-size: 4vw; } }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #ffffff !important;
+  color: #161618 !important;
   font-family: 'Work Sans', sans-serif;
 }
 
 .navbar-brand {
-  margin-top: -30px;
-  font-size: 53px !important;
   font-family: 'Pacifico', cursive;
   color: #fff;
   z-index: 1001;
   position: fixed;
-  top: 7px;
   left: 10px;
 }
 
   .navbar-brand img{
     background: #161618;
-    height: 50px;
+    height: 40px;
     border-radius: 50%;
   }
 
 .navbar-toggler {
   z-index: 1001;
   position: fixed;
-  top: 18px;
-  right: 10px; }
+  top: 8px;
+  right: 0px; }
 
 .animated-icon1 {
   width: 25px;
@@ -121,7 +126,6 @@ h1{
   top: 20px; }
 
 .animated-icon1.open span:nth-child(1) {
-  background-color: white;
   top: 11px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -133,7 +137,6 @@ h1{
   left: -60px; }
 
 .animated-icon1.open span:nth-child(3) {
-  background-color: white;
   top: 11px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
